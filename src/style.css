@@ -1,3 +1,60 @@
 .weather-application {
-  background: beige;
+  background: #e2d1c3;
+  border: 1px solid #b88855;
+  border-radius: 10px;
+  color: #b88855;
+  box-shadow: 2px 2px 2px #b88855;
+  font-family: "Nunito", sans-serif;
+  margin: 20px auto 0px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.date-time,
+.weather-conditions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.date-time,
+#city-header {
+  font-size: 30px;
+  font-weight: 900px;
+  line-height: 1.5;
+}
+.temp-today {
+  color: #e7b053;
+  font-size: 56px;
+  font-weight: 700;
+}
+.temperature-conversion {
+  color: #e7b053;
+  font-size: 15px;
+  font-weight: 300;
+}
+.temp-C,
+.temp-F {
+  text-decoration: none;
+  color: #e7b053;
+}
+.temp-F {
+  font-size: 17px;
+  font-weight: bold;
+}
+.weather-conditions {
+  color: #e7b053;
+  font-size: 20px;
+}
+
+.github-reference {
+  display: block;
+  color: #b88855;
+  font-weight: 200;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.github-link {
+  text-decoration: none;
+  color: #b88855;
+  font-weight: 600;
 }
