@@ -21,14 +21,14 @@
   padding: 0;
   margin: 0;
 }
-.date-time,
+
 #city-header {
   font-size: 30px;
   font-weight: 900px;
   line-height: 1.5;
 }
 
-#description {
+#description::first-letter {
   text-transform: capitalize;
 }
 #temp-today,
