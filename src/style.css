@@ -1,3 +1,8 @@
+.weather-application-wrapper {
+  color: #b88855;
+  margin: 0 auto;
+  max-width: 600px;
+}
 .weather-application {
   background: #e2d1c3;
   border: 1px solid #b88855;
@@ -22,7 +27,12 @@
   font-weight: 900px;
   line-height: 1.5;
 }
-.temp-today {
+
+#description {
+  text-transform: capitalize;
+}
+#temp-today,
+.temp-C {
   color: #e7b053;
   font-size: 56px;
   font-weight: 700;
@@ -41,19 +51,16 @@
   font-size: 17px;
   font-weight: bold;
 }
+.icon-today {
+  color: #b88855;
+  font-size: 50px;
+}
 .weather-conditions {
   color: #e7b053;
   font-size: 20px;
 }
 
 .github-reference {
-  display: block;
-  color: #b88855;
-  font-weight: 200;
-  margin: 0 auto;
-  max-width: 600px;
-}
-.github-link {
   text-decoration: none;
   color: #b88855;
   font-weight: 600;

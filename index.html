@@ -17,53 +17,57 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4aa4154644.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="weather-application">
-        <div class="row">
-          <div class="col-6" id="city-header">Amsterdam</div>
-          <div class="col-6">
-            <ul class="date-time">
-              <li>Thursday, May 13</li>
-              <li>15:15</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <span class="temp-today">
-              30 <a href="" class="temp-C">°C</a>
-            </span>
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/001/500/512/non_2x/cloudy-weather-icon-free-vector.jpg"
-              alt="weather-icon"
-              width="40px"
-            />
-            <div>
-              <span class="temperature-conversion">
-                (Change to <a href="" class="temp-F">°F</a> )
-              </span>
+      <div class="weather-application-wrapper">
+        <div class="weather-application">
+          <div class="row">
+            <div class="col-6" id="city-header"></div>
+            <div class="col-6">
+              <ul class="date-time">
+                <li>Thursday, May 13</li>
+                <li>15:15</li>
+              </ul>
             </div>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div id="description"></div>
+              <span id="temp-today"> " " </span><a href="" class="temp-C">°C</a>
+              <span class="icon-today">
+                <i class="fas fa-cloud-sun"></i>
+              </span>
+              <div>
+                <span class="temperature-conversion">
+                  (Change to <a href="" class="temp-F">°F</a> )
+                </span>
+              </div>
+            </div>
 
-          <div class="col-6">
-            <ul class="weather-conditions">
-              <li><strong>Humidity</strong> 88%</li>
-              <li><strong>Wind</strong> 10 km/h</li>
-            </ul>
+            <div class="col-6">
+              <ul class="weather-conditions">
+                <li><strong>Humidity</strong> <span id="humidity"></span>%</li>
+                <li><strong>Wind</strong> <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/steffiehompes/vanilla-weather-app"
+            target="_blank"
+            class="github-reference"
+            >Open source code</a
+          >
+          by Steffie Hompes
+        </small>
       </div>
-      <small class="github-reference">
-        <a
-          href="https://github.com/steffiehompes/vanilla-weather-app"
-          target="_blank"
-          class="github-link"
-          >Open source code</a
-        >
-        by Steffie Hompes
-      </small>
     </div>
     <script src="src/index.js"></script>
   </body>
