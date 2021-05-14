@@ -16,17 +16,38 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
     <script
       src="https://kit.fontawesome.com/4aa4154644.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-application-wrapper">
         <div class="weather-application">
+          <form action="" class="mb-2" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  placeholder="Enter your city here"
+                  id="city-input"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="search-button" />
+              </div>
+              <div class="col-2">
+                <button type="button" class="location-button">
+                  <i class="fas fa-map-pin" id="location-icon"></i>
+                </button>
+              </div>
+            </div>
+          </form>
           <div class="row">
             <div class="col-6" id="city-header"></div>
             <div class="col-6">
@@ -39,9 +60,8 @@
           <div class="row">
             <div class="col-6">
               <div id="description"></div>
-              <span id="temp-today"> " " </span><a href="" class="temp-C">°C</a>
-              <img src="" alt="weather-icon" id="icon-today">
-              </span>
+              <span id="temp-today"></span><a href="" class="temp-C">°C</a>
+              <img src="" alt="" id="icon-today" />
               <div>
                 <span class="temperature-conversion">
                   (Change to <a href="" class="temp-F">°F</a> )

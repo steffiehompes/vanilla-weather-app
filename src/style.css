@@ -14,12 +14,42 @@
   max-width: 600px;
   padding: 20px;
 }
-
+#city-input,
+.search-button,
+.location-button {
+  background: #e2d1c3;
+  border: 2px solid #b88855;
+  border-radius: 8px;
+  color: #b88855;
+  font-size: 18px;
+  padding: 5px 20px;
+}
+#city-input {
+  outline: 0;
+}
+.search-button,
+.location-button {
+  box-shadow: 2px 2px 2px #8d6b46;
+  position: relative;
+  right: 35px;
+  background: #b88855;
+  color: #e2d1c3;
+  padding: 5px 10px;
+}
+.location-button {
+  right: 80px;
+}
+.search.button:hover {
+  background: #b88855;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
 .date-time,
 .weather-conditions {
+  line-height: 1.5;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
 }
 
 #city-header {

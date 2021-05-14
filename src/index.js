@@ -56,9 +56,18 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+function search(city) {
+  let apiKey = "f27803b22003bacb0df7459dd6dc6bd9";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+search("Amsterdam");
 
-let apiKey = "f27803b22003bacb0df7459dd6dc6bd9";
-let units = "metric";
-let cityName = "Amsterdam";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=${units}`;
-axios.get(apiUrl).then(showTemperature);
+let formElement = document.querySelector("#search-form");
+formElement.addEventListener("submit", handleSubmit);
