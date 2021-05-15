@@ -72,6 +72,7 @@
   font-size: 15px;
   font-weight: 300;
 }
+
 .temp-C,
 .temp-F {
   text-decoration: none;
@@ -80,6 +81,15 @@
 .temp-F {
   font-size: 17px;
   font-weight: bold;
+}
+
+.temp-link {
+  text-decoration: none;
+  color: #e7b053;
+}
+.temp-link:hover {
+  cursor: pointer;
+  color: #b88855;
 }
 #icon-today {
   color: #b88855;

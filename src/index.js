@@ -71,3 +71,22 @@ search("Amsterdam");
 
 let formElement = document.querySelector("#search-form");
 formElement.addEventListener("submit", handleSubmit);
+
+//°C and °F conversion
+function unitConversion(event) {
+  event.preventDefault();
+  let tempToday = document.querySelector("#temp-today");
+  if (tempF.innerHTML === "°F") {
+    tempToday.innerHTML = Math.round((tempToday.innerHTML * 9) / 5 + 32);
+    tempF.innerHTML = "°C";
+    tempC.innerHTML = "°F";
+  } else {
+    tempToday.innerHTML = Math.round(((tempToday.innerHTML - 32) * 5) / 9);
+    tempF.innerHTML = "°F";
+    tempC.innerHTML = "°C";
+  }
+}
+let tempC = document.querySelector(".temp-C a");
+tempC.addEventListener("click", unitConversion);
+let tempF = document.querySelector(".temp-F a");
+tempF.addEventListener("click", unitConversion);
