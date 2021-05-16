@@ -56,41 +56,22 @@
   padding: 10px;
   text-align: center;
 }
-
-#temp-today,
-.temp-C {
+#show-temperature {
+  display: block;
+  text-align: center;
+  color: #ec6e4c;
+}
+#temp-today {
   font-size: 56px;
   font-weight: 700;
 }
-.temperature-conversion {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: 17px;
-}
-.temp-C,
-.temp-F {
-  text-decoration: none;
-}
-.temp-F {
-  font-size: 17px;
-  font-weight: bold;
-}
-.temperature-conversion {
-  font-weight: 300;
-  font-size: 15px;
+.temp-C {
+  font-size: 25px;
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
 }
-.temp-link {
-  text-decoration: none;
-  color: #b88855;
-}
-.temp-link:hover {
-  cursor: pointer;
-  color: #ec6e4c;
-}
+
 #icon-today {
-  font-size: 20px;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -113,13 +94,15 @@
 }
 .weather-forecast-day {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #ec6e4c;
 }
 .weather-forecast-icon {
-  font-size: 25px;
+  font-size: 30px;
 }
 .weather-forecast-temperature {
   font-size: 13.5px;
+  color: #ec6e4c;
 }
 .temp-min {
   opacity: 75%;
