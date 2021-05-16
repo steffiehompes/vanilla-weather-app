@@ -108,6 +108,25 @@
   font-size: 20px;
 }
 
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-day,
+.weather-forecast-date {
+  color: #b88855;
+  font-size: 16px;
+  font-weight: 500;
+}
+.weather-forecast-icon {
+  font-size: 25px;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+  color: #e7b053;
+}
+.temp-divider {
+  color: #b88855;
+}
 .github-reference {
   text-decoration: none;
   color: #b88855;
