@@ -49,21 +49,17 @@
             </div>
           </form>
           <div class="row">
-            <div class="col-6" id="city-header"></div>
-            <div class="col-6">
-              <ul class="date-time">
-                <li>Last updated:</li>
-                <li><span id="date"></span></li>
-              </ul>
+            <div class="col-8">
+              <span class="date-time">
+                Last updated:
+            <span id="date"></span>
             </div>
+            <div class="col-12" id="city-header"></div>
           </div>
           <div class="row">
-            <div class="col-6">
-              <div id="description"></div>
+            <div class="col-4">
               <span id="temp-today"></span>
               <span class="temp-C"><a href="" class="temp-link">°C</a></span>
-
-              <img src="" alt="" id="icon-today" />
               <div>
                 <div class="temperature-conversion">
                   (Change to
@@ -74,8 +70,13 @@
                 </div>
               </div>
             </div>
+            <div class="col-4">
+              <div id="description"></div>
+              <img src="" alt="" id="icon-today" />
+              
+            </div>
 
-            <div class="col-6">
+            <div class="col-4">
               <ul class="weather-conditions">
                 <li><strong>Humidity</strong> <span id="humidity"></span>%</li>
                 <li><strong>Wind</strong> <span id="wind"></span> km/h</li>

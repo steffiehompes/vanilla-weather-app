@@ -39,12 +39,9 @@
 .location-button {
   right: 80px;
 }
-.search.button:hover {
-  background: #b88855;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
+.date-time {
+  font-size: 13px;
 }
-.date-time,
 .weather-conditions {
   line-height: 1.5;
   list-style: none;
@@ -53,37 +50,32 @@
 }
 
 #city-header {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900px;
   line-height: 1.5;
+  padding: 10px;
+  text-align: center;
 }
 
-#description::first-letter {
-  text-transform: capitalize;
-}
 #temp-today,
 .temp-C {
-  color: #e7b053;
   font-size: 56px;
   font-weight: 700;
 }
 .temperature-conversion {
-  color: #e7b053;
   font-size: 15px;
   font-weight: 300;
+  margin-top: 17px;
 }
-
 .temp-C,
 .temp-F {
   text-decoration: none;
-  color: #e7b053;
 }
 .temp-F {
   font-size: 17px;
   font-weight: bold;
 }
 .temperature-conversion {
-  color: #e7b053;
   font-weight: 300;
   font-size: 15px;
   position: relative;
@@ -91,42 +83,48 @@
 }
 .temp-link {
   text-decoration: none;
-  color: #e7b053;
+  color: #b88855;
 }
 .temp-link:hover {
   cursor: pointer;
-  color: #b88855;
+  color: #ec6e4c;
 }
 #icon-today {
-  color: #b88855;
-  font-size: 50px;
-  position: relative;
-  bottom: 15px;
-}
-.weather-conditions {
-  color: #e7b053;
   font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+#description {
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+#description::first-letter {
+  text-transform: capitalize;
+}
+.weather-conditions,
+#description {
+  font-size: 18px;
 }
 
 .weather-forecast {
   text-align: center;
 }
-.weather-forecast-day,
-.weather-forecast-date {
-  color: #b88855;
-  font-size: 16px;
+.weather-forecast-day {
+  font-size: 18px;
   font-weight: 500;
 }
 .weather-forecast-icon {
   font-size: 25px;
 }
 .weather-forecast-temperature {
-  font-size: 13px;
-  color: #e7b053;
+  font-size: 13.5px;
 }
-.temp-divider {
-  color: #b88855;
+.temp-min {
+  opacity: 75%;
 }
+
 .github-reference {
   text-decoration: none;
   color: #b88855;
