@@ -90,3 +90,20 @@ let tempC = document.querySelector(".temp-C a");
 tempC.addEventListener("click", unitConversion);
 let tempF = document.querySelector(".temp-F a");
 tempF.addEventListener("click", unitConversion);
+
+//GEOLOCATION!!
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "f27803b22003bacb0df7459dd6dc6bd9";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+
+  axios.get(apiUrl).then(showTemperature);
+}
+function getCurrentPosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+let locationButton = document.querySelector(".location-button");
+locationButton.addEventListener("click", getCurrentPosition);
