@@ -1,14 +1,14 @@
 .weather-application-wrapper {
-  color: #b88855;
+  color: #4b6673;
   margin: 0 auto;
   max-width: 600px;
 }
 .weather-application {
-  background: #e2d1c3;
-  border: 1px solid #b88855;
+  background: #ebe0cc;
+  border: 1px solid #eae8d8;
   border-radius: 10px;
-  color: #b88855;
-  box-shadow: 2px 2px 2px #b88855;
+  color: #4b6673;
+  box-shadow: 2px 2px 2px#4b6673;
   font-family: "Nunito", sans-serif;
   margin: 20px auto 0px;
   max-width: 600px;
@@ -17,10 +17,9 @@
 #city-input,
 .search-button,
 .location-button {
-  background: #e2d1c3;
-  border: 2px solid #b88855;
+  background: #ebe0cc;
   border-radius: 8px;
-  color: #b88855;
+  color: #4b6673;
   font-size: 18px;
   padding: 5px 20px;
 }
@@ -29,11 +28,12 @@
 }
 .search-button,
 .location-button {
-  box-shadow: 2px 2px 2px #8d6b46;
+  box-shadow: 2px 2px 2px #4b6673;
   position: relative;
   right: 35px;
-  background: #b88855;
-  color: #e2d1c3;
+  background: #4b6673;
+  opacity: 90%;
+  color: #ebe0cc;
   padding: 5px 10px;
 }
 .location-button {
@@ -80,6 +80,7 @@
   text-align: center;
   position: relative;
   top: 10px;
+  font-weight: bold;
 }
 #description::first-letter {
   text-transform: capitalize;
@@ -87,6 +88,7 @@
 .weather-conditions,
 #description {
   font-size: 18px;
+  line-height: 2;
 }
 
 .weather-forecast {
@@ -107,9 +109,11 @@
 .temp-min {
   opacity: 75%;
 }
-
+.temp-divider {
+  color: #4b6673;
+}
 .github-reference {
   text-decoration: none;
-  color: #b88855;
+  color: #4b6673;
   font-weight: 600;
 }
