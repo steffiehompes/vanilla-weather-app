@@ -26,18 +26,15 @@
 #city-input {
   outline: 0;
 }
+
 .search-button,
 .location-button {
   box-shadow: 2px 2px 2px #4b6673;
-  position: relative;
-  right: 35px;
+
   background: #4b6673;
   opacity: 90%;
   color: #ebe0cc;
   padding: 5px 10px;
-}
-.location-button {
-  right: 80px;
 }
 .date-time {
   font-size: 13px;
